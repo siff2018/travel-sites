@@ -3,18 +3,21 @@
   position: relative;
 
   &__image {
-
-    display:block;
+    display: block;
   }
 
-
   &__text-content {
+    padding-top: 88px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
+
+    @mixin atMedium {
+      padding-top: 60px;
+    }
   }
 
   &__title {
@@ -24,14 +27,6 @@
     font-size: 2.4rem;
   
     @mixin atSmall {
-      font-size: 4.8rem;
-    }
-
-    /* @mixin atMedium {
-      font-size: 3.2rem;
-    } */
-
-    @mixin atLarge {
       font-size: 4.8rem;
     }
 
@@ -58,8 +53,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    @mixin atSmall{
-
+    @mixin atSmall {
       font-size: 1.875rem;
     }
   }
